@@ -1,0 +1,7 @@
+<div>
+	<label *ngFor="let article of articles; let i = index" [ngClass]="[article.isChecked ? 'is-valid' : 'is-notvalid']">
+    <input type="radio" name="name"  (change)="checked(i)" >
+      input{{i}}
+    </label>
+</div>
+
